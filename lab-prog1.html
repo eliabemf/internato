@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="br">
 
 <head>
     <!-- Required meta tags -->
@@ -8,9 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 
     <title>Inscrição</title>
@@ -19,415 +17,237 @@
 <body style="background-color: #EFF2FB">
 
 
-    <div class="container-fluid">
+<div class="container-fluid">
 
-        <div class="row justify-content-md-center content-wrapper ">
+    <div class="row justify-content-md-center content-wrapper ">
 
-            <!-- Default form register -->
-            <form class="col-6 border border-light p-5 " style="background-color: #fff" method="post">
 
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
-                        style="width: 25%; background-color: #59d8ec;"></div>
+
+
+
+        <!-- Default form register -->
+        <form class="col-6 border border-light p-5 " style="background-color: #fff" method="post">
+
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                     aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                     style="width: 25%; background-color: #59d8ec;"></div>
+            </div>
+
+            <h5 class="info-color white-text text-center py-4">
+                <strong>
+                    <h3>Seleção de Preceptores para o Internato do Curso de Medicina EMCM/UFRN</h3>
+                </strong>
+
+            </h5>
+
+            <div class="form-row mb-2">
+                <div class="col-8 mb-2">
+                    <!-- Nome Completo -->
+
+                    <label for="nome">Nome Completo*</label>
+                    <input id="nome" name="nome" type="text" class="form-control" placeholder="Ex.: Eliabe Felix">
                 </div>
 
-                <h5 class="info-color white-text text-center py-4">
-                    <strong>
-                        <h3>Seleção de Preceptores para o Internato do Curso de Medicina EMCM/UFRN</h3>
-                    </strong>
-
-                </h5>
-
-                <div class="form-row mb-2">
-                    <div class="col-8 mb-2">
-                        <!-- Nome Completo -->
-
-                        <label for="nome">Nome Completo*</label>
-                        <input id="nome" name="nome" type="text" class="form-control" placeholder="Ex.: Eliabe Felix">
-                    </div>
-
-                    <div class="col-4 mb-2">
-                        <label for="email">E-mail*</label>
-                        <input type="email" id="email" class="form-control" placeholder="Ex.: exemplo@gmail.com">
-                    </div>
-
+                <div class="col-4 mb-2">
+                    <label for="email">E-mail*</label>
+                    <input type="email" id="email" class="form-control" placeholder="Ex.: exemplo@gmail.com">
                 </div>
 
-                <div class="form-row mb-2">
-                    <div class="col-4 mb-2">
-                        <label for="cpf">CPF*</label>
-                        <input type="text" id="cpf" name="cpf" class="form-control" placeholder="123.456.789-10">
+            </div>
 
-                    </div>
-                    <div class="col-4 mb-2">
-                        <label for="crm">CRM/RN*</label>
-                        <input type="text" id="crm" class="form-control" placeholder="Ex.: 123456789">
+            <div class="form-row mb-2">
+                <div class="col-4 mb-2">
+                    <label for="cpf">CPF*</label>
+                    <input type="text" id="cpf" name="cpf" class="form-control" placeholder="123.456.789-10">
 
-                    </div>
-
-                    <div class="col-4 mb-2">
-                        <label for="dtnasc">Data Nascimento*</label>
-                        <input type="date" id="dtnasc" class="form-control">
-
-                    </div>
-
+                </div>
+                <div class="col-4 mb-2">
+                    <label for="crm">CRM/RN*</label>
+                    <input type="text" id="crm" class="form-control" placeholder="Ex.: 123456789">
 
                 </div>
 
-
-                <div class="form-row mb-2">
-                    <div class="col-4 mb-2">
-                        <label for="cartid">Carteira de Identidade*</label>
-                        <input type="text" id="cartid" name="cartid" class="form-control"
-                            placeholder="Ex.: 123.123.123">
-
-                    </div>
-                    <div class="col-4 mb-2">
-                        <label for="orgao">Orgão Emissor*</label>
-                        <input type="text" id="orgao" class="form-control" placeholder="Ex.: 123456789">
-
-                    </div>
-
-                    <div class="col-4">
-                        <label for="estadoEm">Estado Emissor*</label>
-                        <select id="estadoEm" name="estadoEm" class="form-control">
-                            <option value="">Selecionar Estado</option>
-
-                            <option value="Acre">&#8227; Acre (AC) </option>
-                            <option value="Alagoas">&#8227;Alagoas (AL)</option>
-                            <option value="Amapá">&#8227;Amapá (AP)</option>
-                            <option value="Amazonas">&#8227;Amazonas (AM)</option>
-                            <option value="Bahia">&#8227;Bahia (BA)</option>
-                            <option value="Ceará">&#8227;Ceará (CE)</option>
-                            <option value="Distrito Federal">&#8227;Distrito Federal (DF)</option>
-                            <option value="Espírito Santo">&#8227;Espírito Santo (ES)</option>
-                            <option value="Goiás">&#8227;Goiás (GO)</option>
-                            <option value="Maranhão">&#8227;Maranhão (MA)</option>
-                            <option value="Mato Grosso">&#8227;Mato Grosso (MT)</option>
-                            <option value="Mato Grosso do Sul">&#8227;Mato Grosso do Sul (MS)</option>
-                            <option value="Minas Gerais">&#8227;Minas Gerais (MG)</option>
-                            <option value="Pará">&#8227;Pará (PA)</option>
-                            <option value="Paraíba">&#8227;Paraíba (PB)</option>
-                            <option value="Paraná">&#8227;Paraná (PR)</option>
-                            <option value="Pernambuco">&#8227;Pernambuco (PE)</option>
-                            <option value="Piauí">&#8227;Piauí (PI)</option>
-                            <option value="Rio de Janeiro">&#8227;Rio de Janeiro (RJ)</option>
-                            <option value="Rio Grande do Norte">&#8227;Rio Grande do Norte (RN)</option>
-                            <option value="Rio Grande do Sul">&#8227;Rio Grande do Sul (RS)</option>
-                            <option value="Rondônia">&#8227;Rondônia (RO)</option>
-                            <option value="Roraima">&#8227;Roraima (RR)</option>
-                            <option value="Santa Catarina">&#8227;Santa Catarina (SC)</option>
-                            <option value="São Paulo">&#8227;São Paulo (SP)</option>
-                            <option value="Sergipe">&#8227;Sergipe (SE)</option>
-                            <option value="Tocantins">&#8227;Tocantins (TO)</option>
-
-                        </select>
-
-                    </div>
+                <div class="col-4 mb-2">
+                    <label for="dtnasc">Data Nascimento*</label>
+                    <input type="date" id="dtnasc" class="form-control">
 
                 </div>
 
 
+            </div>
 
-                <div class="form-row mb-2">
 
+            <div class="form-row mb-2">
+                <div class="col-4 mb-2">
+                    <label for="cartid">Carteira de Identidade*</label>
+                    <input type="text" id="cartid" name="cartid" class="form-control"
+                           placeholder="Ex.: 123.123.123">
 
-                    <div class="col-6 mb-2">
-                        <label for="estadoMo">Estado*</label>
-                        <select id="estadoMo" name="estadoMo" class="form-control">
-                            <option value="">Selecionar Estado</option>
-
-                            <option value="Acre">&#8227; Acre (AC) </option>
-                            <option value="Alagoas">&#8227;Alagoas (AL)</option>
-                            <option value="Amapá">&#8227;Amapá (AP)</option>
-                            <option value="Amazonas">&#8227;Amazonas (AM)</option>
-                            <option value="Bahia">&#8227;Bahia (BA)</option>
-                            <option value="Ceará">&#8227;Ceará (CE)</option>
-                            <option value="Distrito Federal">&#8227;Distrito Federal (DF)</option>
-                            <option value="Espírito Santo">&#8227;Espírito Santo (ES)</option>
-                            <option value="Goiás">&#8227;Goiás (GO)</option>
-                            <option value="Maranhão">&#8227;Maranhão (MA)</option>
-                            <option value="Mato Grosso">&#8227;Mato Grosso (MT)</option>
-                            <option value="Mato Grosso do Sul">&#8227;Mato Grosso do Sul (MS)</option>
-                            <option value="Minas Gerais">&#8227;Minas Gerais (MG)</option>
-                            <option value="Pará">&#8227;Pará (PA)</option>
-                            <option value="Paraíba">&#8227;Paraíba (PB)</option>
-                            <option value="Paraná">&#8227;Paraná (PR)</option>
-                            <option value="Pernambuco">&#8227;Pernambuco (PE)</option>
-                            <option value="Piauí">&#8227;Piauí (PI)</option>
-                            <option value="Rio de Janeiro">&#8227;Rio de Janeiro (RJ)</option>
-                            <option value="Rio Grande do Norte">&#8227;Rio Grande do Norte (RN)</option>
-                            <option value="Rio Grande do Sul">&#8227;Rio Grande do Sul (RS)</option>
-                            <option value="Rondônia">&#8227;Rondônia (RO)</option>
-                            <option value="Roraima">&#8227;Roraima (RR)</option>
-                            <option value="Santa Catarina">&#8227;Santa Catarina (SC)</option>
-                            <option value="São Paulo">&#8227;São Paulo (SP)</option>
-                            <option value="Sergipe">&#8227;Sergipe (SE)</option>
-                            <option value="Tocantins">&#8227;Tocantins (TO)</option>
-
-                        </select>
-
-                    </div>
-
-                    <div class="col-6 mb-2">
-                        <label for="cidade">Cidade*</label>
-                        <input type="text" id=cidade name="cidade" class="form-control" placeholder="Ex.: Caicó">
-
-                    </div>
-
-                    <div class="col-6 mb-2">
-                        <label for="cep">CEP*</label>
-                        <input type="text" id="cep" name="cep" class="form-control" placeholder="Ex.: 59300000">
-
-                    </div>
-
-                    <div class="col-6 mb-2">
-                        <label for="bairro">Bairro*</label>
-                        <input type="text" id="bairro" name="bairro" class="form-control" placeholder="Ex.: Centro">
-
-                    </div>
-
-                    <div class="col-12 mb-2">
-                        <label for="endereco">Endereço*</label>
-                        <input type="text" id="endereco" name="endereco" class="form-control"
-                            placeholder="Ex.: Rua Coronel Martiniano, N°100">
-                    </div>
+                </div>
+                <div class="col-4 mb-2">
+                    <label for="orgao">Orgão Emissor*</label>
+                    <input type="text" id="orgao" class="form-control" placeholder="Ex.: 123456789">
 
                 </div>
 
-                <div class="form-row mb-2">
-                    <div class="col-4 mb-2">
-                        <label for="telefone">Telefone*</label>
-                        <input type="text" id="telefone" name="telefone" class="form-control"
-                            placeholder="Ex.: (84) 01234-5678">
+                <div class="col-4">
+                    <label for="estadoEm">Estado Emissor*</label>
+                    <select id="estadoEm" name="estadoEm" class="form-control">
+                        <option value="">Selecionar Estado</option>
 
-                    </div>
+                        <option value="Acre">&#8227; Acre (AC)</option>
+                        <option value="Alagoas">&#8227;Alagoas (AL)</option>
+                        <option value="Amapá">&#8227;Amapá (AP)</option>
+                        <option value="Amazonas">&#8227;Amazonas (AM)</option>
+                        <option value="Bahia">&#8227;Bahia (BA)</option>
+                        <option value="Ceará">&#8227;Ceará (CE)</option>
+                        <option value="Distrito Federal">&#8227;Distrito Federal (DF)</option>
+                        <option value="Espírito Santo">&#8227;Espírito Santo (ES)</option>
+                        <option value="Goiás">&#8227;Goiás (GO)</option>
+                        <option value="Maranhão">&#8227;Maranhão (MA)</option>
+                        <option value="Mato Grosso">&#8227;Mato Grosso (MT)</option>
+                        <option value="Mato Grosso do Sul">&#8227;Mato Grosso do Sul (MS)</option>
+                        <option value="Minas Gerais">&#8227;Minas Gerais (MG)</option>
+                        <option value="Pará">&#8227;Pará (PA)</option>
+                        <option value="Paraíba">&#8227;Paraíba (PB)</option>
+                        <option value="Paraná">&#8227;Paraná (PR)</option>
+                        <option value="Pernambuco">&#8227;Pernambuco (PE)</option>
+                        <option value="Piauí">&#8227;Piauí (PI)</option>
+                        <option value="Rio de Janeiro">&#8227;Rio de Janeiro (RJ)</option>
+                        <option value="Rio Grande do Norte">&#8227;Rio Grande do Norte (RN)</option>
+                        <option value="Rio Grande do Sul">&#8227;Rio Grande do Sul (RS)</option>
+                        <option value="Rondônia">&#8227;Rondônia (RO)</option>
+                        <option value="Roraima">&#8227;Roraima (RR)</option>
+                        <option value="Santa Catarina">&#8227;Santa Catarina (SC)</option>
+                        <option value="São Paulo">&#8227;São Paulo (SP)</option>
+                        <option value="Sergipe">&#8227;Sergipe (SE)</option>
+                        <option value="Tocantins">&#8227;Tocantins (TO)</option>
 
-                    <div class="col-4 mb-2">
-                        <label for="cel1">Celular 1</label>
-                        <input type="text" id="cel1" name="cel1" class="form-control"
-                            placeholder="Ex.: (84) 01234-5678">
+                    </select>
 
-                    </div>
-
-                    <div class="col-4 mb-2">
-                        <label for="cel2">Celular 2</label>
-                        <input type="text" id="cel2" name="cel2" class="form-control"
-                            placeholder="Ex.: (84) 01234-5678">
-
-                    </div>
                 </div>
 
+            </div>
 
 
-                <div class=" row justify-content-end">
-                    <!-- Sign up button -->
-                    <div class="col-3  ">
-                        <input class=" btn btn-info my-4 btn-block" onclick="proximoForm()" value="Próximo"
-                            type="button" />
-                    </div>
+            <div class="form-row mb-2">
+
+
+                <div class="col-6 mb-2">
+                    <label for="estadoMo">Estado*</label>
+                    <select id="estadoMo" name="estadoMo" class="form-control">
+                        <option value="">Selecionar Estado</option>
+
+                        <option value="Acre">&#8227; Acre (AC)</option>
+                        <option value="Alagoas">&#8227;Alagoas (AL)</option>
+                        <option value="Amapá">&#8227;Amapá (AP)</option>
+                        <option value="Amazonas">&#8227;Amazonas (AM)</option>
+                        <option value="Bahia">&#8227;Bahia (BA)</option>
+                        <option value="Ceará">&#8227;Ceará (CE)</option>
+                        <option value="Distrito Federal">&#8227;Distrito Federal (DF)</option>
+                        <option value="Espírito Santo">&#8227;Espírito Santo (ES)</option>
+                        <option value="Goiás">&#8227;Goiás (GO)</option>
+                        <option value="Maranhão">&#8227;Maranhão (MA)</option>
+                        <option value="Mato Grosso">&#8227;Mato Grosso (MT)</option>
+                        <option value="Mato Grosso do Sul">&#8227;Mato Grosso do Sul (MS)</option>
+                        <option value="Minas Gerais">&#8227;Minas Gerais (MG)</option>
+                        <option value="Pará">&#8227;Pará (PA)</option>
+                        <option value="Paraíba">&#8227;Paraíba (PB)</option>
+                        <option value="Paraná">&#8227;Paraná (PR)</option>
+                        <option value="Pernambuco">&#8227;Pernambuco (PE)</option>
+                        <option value="Piauí">&#8227;Piauí (PI)</option>
+                        <option value="Rio de Janeiro">&#8227;Rio de Janeiro (RJ)</option>
+                        <option value="Rio Grande do Norte">&#8227;Rio Grande do Norte (RN)</option>
+                        <option value="Rio Grande do Sul">&#8227;Rio Grande do Sul (RS)</option>
+                        <option value="Rondônia">&#8227;Rondônia (RO)</option>
+                        <option value="Roraima">&#8227;Roraima (RR)</option>
+                        <option value="Santa Catarina">&#8227;Santa Catarina (SC)</option>
+                        <option value="São Paulo">&#8227;São Paulo (SP)</option>
+                        <option value="Sergipe">&#8227;Sergipe (SE)</option>
+                        <option value="Tocantins">&#8227;Tocantins (TO)</option>
+
+                    </select>
+
                 </div>
 
-            </form>
+                <div class="col-6 mb-2">
+                    <label for="cidade">Cidade*</label>
+                    <input type="text" id=cidade name="cidade" class="form-control" placeholder="Ex.: Caicó">
 
-        </div>
+                </div>
+
+                <div class="col-6 mb-2">
+                    <label for="cep">CEP*</label>
+                    <input type="text" id="cep" name="cep" class="form-control" placeholder="Ex.: 59300000">
+
+                </div>
+
+                <div class="col-6 mb-2">
+                    <label for="bairro">Bairro*</label>
+                    <input type="text" id="bairro" name="bairro" class="form-control" placeholder="Ex.: Centro">
+
+                </div>
+
+                <div class="col-12 mb-2">
+                    <label for="endereco">Endereço*</label>
+                    <input type="text" id="endereco" name="endereco" class="form-control"
+                           placeholder="Ex.: Rua Coronel Martiniano, N°100">
+                </div>
+
+            </div>
+
+            <div class="form-row mb-2">
+                <div class="col-4 mb-2">
+                    <label for="telefone">Telefone*</label>
+                    <input type="text" id="telefone" name="telefone" class="form-control"
+                           placeholder="Ex.: (84) 01234-5678">
+
+                </div>
+
+                <div class="col-4 mb-2">
+                    <label for="cel1">Celular 1</label>
+                    <input type="text" id="cel1" name="cel1" class="form-control"
+                           placeholder="Ex.: (84) 01234-5678">
+
+                </div>
+
+                <div class="col-4 mb-2">
+                    <label for="cel2">Celular 2</label>
+                    <input type="text" id="cel2" name="cel2" class="form-control"
+                           placeholder="Ex.: (84) 01234-5678">
+
+                </div>
+            </div>
+
+
+            <div class=" row justify-content-end">
+                <!-- Sign up button -->
+                <div class="col-3  ">
+                    <input class=" btn btn-info my-4 btn-block" onclick="proximoForm()" value="Próximo"
+                           type="button"/>
+                </div>
+            </div>
+
+        </form>
+
     </div>
+</div>
 
 
+<script src="js/funcoes.js">
 
-    <script>
+</script>
 
-        var myObj, myJSON, text, obj;
-
-        function proximoForm() {
-
-            var Form_nome = document.getElementById("nome").value;
-            var Form_email = document.getElementById("email").value;
-            var Form_cpf = document.getElementById("cpf").value;
-            var Form_crm = document.getElementById("crm").value;
-            var Form_dtnasc = document.getElementById("dtnasc").value;
-            var Form_cartid = document.getElementById("cartid").value;
-            var Form_orgao = document.getElementById("orgao").value;
-            var Form_estadoEm = document.getElementById("estadoEm").value;
-            var Form_estadoMo = document.getElementById("estadoMo").value;
-            var Form_cidade = document.getElementById("cidade").value;
-            var Form_cep = document.getElementById("cep").value;
-            var Form_bairro = document.getElementById("bairro").value;
-            var Form_endereco = document.getElementById("endereco").value;
-            var Form_tel = document.getElementById("telefone").value;
-            var Form_cel1 = document.getElementById("cel1").value;
-            var Form_cel2 = document.getElementById("cel2").value;
-
-            // Storing data:
-
-            myObj = {
-                nome: Form_nome,
-                email: Form_email,
-                cpf: Form_cpf,
-                crm: Form_crm,
-                dtNasc: Form_dtnasc,
-                cartId: Form_cartid,
-                orgao: Form_orgao,
-                estadoEm: Form_estadoEm,
-                estadoMo: Form_estadoMo,
-                cidade: Form_cidade,
-                cep: Form_cep,
-                bairro: Form_bairro,
-                endereco: Form_endereco,
-                tel: Form_tel,
-                cel1: Form_cel1,
-                cel2: Form_cel2
-            };
-
-            if (validaForm(myObj)) {
-
-                myJSON = JSON.stringify(myObj);
-                localStorage.setItem("FormJSON", myJSON);
-
-                window.location.href = "./sword.html";
-            }
-
-        }
-
-
-        function validaForm(frm) {
-
-
-            if (frm.nome == null || frm.nome.length < 6) {
-                //É mostrado um alerta, caso o campo esteja vazio.
-                alert("Por favor, indique o seu NOME corretamente");
-                //Foi definido um focus no campo.
-                document.getElementById("nome").focus();
-                //o form não é enviado.
-                return false;
-            }
-
-            //o campo e-mail precisa de conter: "@", "." e não pode estar vazio
-
-            if (frm.email.indexOf("@") == -1 || frm.email.indexOf(".") == -1 || frm.email.length < 6 || frm.email == null) {
-                alert("Por favor, indique um e-mail válido.");
-                document.getElementById("email").focus();
-                return false;
-            }
-
-            if (frm.cpf.length < 14 || frm.cpf.indexOf("-") == -1 || frm.cpf.indexOf(".") == -1) {
-                //É mostrado um alerta, caso o campo esteja vazio.
-                alert("Por favor, digite corretamente seu CPF. \nInsira os  \" . \"  e o \" - \" para que o seu numero de CPF fique da forma indicada. \nEx.: 123.123.123-12");
-                //Foi definido um focus no campo.
-                document.getElementById("cpf").focus();
-                //o form não é enviado.
-                return false;
-            }
-
-            if (frm.crm == ' ' || frm.crm == null || frm.crm.length < 4) {
-                //É mostrado um alerta, caso o campo esteja vazio.
-                alert("Por favor, indique o seu CRM/RN corretamente.");
-                //Foi definido um focus no campo.
-                document.getElementById("crm").focus();
-                //o form não é enviado.
-                return false;
-            }
-
-
-            if (frm.dtNasc == ' ' || frm.dtNasc == null || frm.dtNasc.length < 10) {
-                //É mostrado um alerta, caso o campo esteja vazio.
-                alert("Por favor, informe corretamente a sua data de nascimento.");
-                //Foi definido um focus no campo.
-                document.getElementById("dtnasc").focus();
-                //o form não é enviado.
-                return false;
-            }
-
-
-            if (frm.cartId == ' ' || frm.cartId == null || frm.cartId.length < 3) {
-                //É mostrado um alerta, caso o campo esteja vazio.
-                alert("Por favor, indique o número correto da sua Caterteira de Identidade. \nEx.: 123.123.123");
-                //Foi definido um focus no campo.
-                document.getElementById("cartid").focus();
-                //o form não é enviado.
-                return false;
-            }
-
-            if (frm.orgao == ' ' || frm.orgao == null || frm.orgao.length < 1) {
-                //É mostrado um alerta, caso o campo esteja vazio.
-                alert("Por favor, informe o orgão emissor da carteira de identidade. \nEx.: SSP");
-                //Foi definido um focus no campo.
-                document.getElementById("orgao").focus();
-                //o form não é enviado.
-                return false;
-            }
-
-            if (frm.estadoEm == '' || frm.estadoEm == null) {
-                //É mostrado um alerta, caso o campo esteja vazio.
-                alert("Por favor, informe o estado onde sua carteira de identidade foi emitida.");
-                //Foi definido um focus no campo.
-                document.getElementById("estadoEm").focus();
-                //o form não é enviado.
-                return false;
-            }
-
-            if (frm.estadoMo == '' || frm.estadoMo == null) {
-                //É mostrado um alerta, caso o campo esteja vazio.
-                alert("Por favor, informe o estado onde você mora atualmente.");
-                //Foi definido um focus no campo.
-                document.getElementById("estadoMo").focus();
-                //o form não é enviado.
-                return false;
-            }
-
-            if (frm.cidade == ' ' || frm.cidade == null || frm.cidade.length < 2) {
-                //É mostrado um alerta, caso o campo esteja vazio.
-                alert("Por favor, indique o seu nome corretamente");
-                //Foi definido um focus no campo.
-                document.getElementById("cidade").focus();
-                //o form não é enviado.
-                return false;
-            }
-
-            if (frm.cep == ' ' || frm.cep == null || frm.cep.length < 9) {
-                //É mostrado um alerta, caso o campo esteja vazio.
-                alert("Por favor, verifique se o CEP esta digitado no padrão necessario. \nEx.: 59300-000");
-                //Foi definido um focus no campo.
-                document.getElementById("cep").focus();
-                //o form não é enviado.
-                return false;
-            }
-           
-            if (frm.bairro == "" || frm.bairro == null || frm.cep.length < 2) {
-                alert("Por favor, Informe o bairro onde mora.");
-                document.getElementById("bairro").focus();
-                return false;
-            }
-
-            if (frm.endereco == "" || frm.endereco == null || frm.endereco.length < 3 ) {
-                alert("Por favor, Informe endereço corretamente.");
-                document.getElementById("endereco").focus();
-                return false;
-            }
-
-            if (frm.tel == "" || frm.tel == null || frm.tel.length < 13 ||  frm.tel.indexOf("(") == -1 || frm.tel.indexOf(")") == -1 ) {
-                alert("Por favor, Indorme seu telefone corretamene. \nEx.: (84) 98765-4321");
-                document.getElementById("telefone").focus();
-                return false;
-            }
-
-            return true;
-
-
-        }
-
-    </script>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 </body>
